@@ -4618,20 +4618,22 @@ function removeNetwork(network) {
 addNetwork({
   name: 'livenet',
   alias: 'mainnet',
-  pubkeyhash: 0x00,
-  privatekey: 0x80,
-  scripthash: 0x05,
+  pubkeyhash: 0x32,
+  privatekey: 0xb2,
+  scripthash: 0x09,
   xpubkey: 0x0488b21e,
   xprivkey: 0x0488ade4,
-  networkMagic: 0xf9beb4d9,
-  port: 8333,
+  networkMagic: 0xaf4576ee,
+  port: 10888,
   dnsSeeds: [
-    'seed.bitcoin.sipa.be',
-    'dnsseed.bluematt.me',
-    'dnsseed.bitcoin.dashjr.org',
-    'seed.bitcoinstats.com',
-    'seed.bitnodes.io',
-    'bitseed.xf2.org'
+    'seed1.myriadcoin.org',
+    'seed2.myriadcoin.org',
+    'seed3.myriadcoin.org',
+    'seed4.myriadcoin.org',
+    'seed5.myriadcoin.org',
+    'seed6.myriadcoin.org',
+    'seed7.myriadcoin.org',
+    'seed8.myriadcoin.org'
   ]
 });
 
@@ -4644,9 +4646,9 @@ var livenet = get('livenet');
 addNetwork({
   name: 'testnet',
   alias: 'regtest',
-  pubkeyhash: 0x6f,
+  pubkeyhash: 0x58,
   privatekey: 0xef,
-  scripthash: 0xc4,
+  scripthash: 0xbc,
   xpubkey: 0x043587cf,
   xprivkey: 0x04358394
 });
@@ -4660,13 +4662,11 @@ var testnet = get('testnet');
 // Add configurable values for testnet/regtest
 
 var TESTNET = {
-  PORT: 18333,
-  NETWORK_MAGIC: BufferUtil.integerAsBuffer(0x0b110907),
+  PORT: 20888,
+  NETWORK_MAGIC: BufferUtil.integerAsBuffer(0x01f555a4),
   DNS_SEEDS: [
-    'testnet-seed.bitcoin.petertodd.org',
-    'testnet-seed.bluematt.me',
-    'testnet-seed.alexykot.me',
-    'testnet-seed.bitcoin.schildbach.de'
+    'testseed1.myriadcoin.org',
+    'testseed2.myriadcoin.org'
   ]
 };
 
